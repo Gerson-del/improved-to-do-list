@@ -1,0 +1,171 @@
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+#title {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  min-height: 100vh;
+  background: transparent;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.task-container {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttons,
+.check-button {
+  display: flex;
+  border-radius: 20px;
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+  border: none;
+  padding: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.buttons:hover,
+.check-button:hover {
+  transform: scale(1.03);
+}
+
+.parrafos {
+  display: flex;
+  font-size: 20px;
+  padding: 10px;
+  margin: 0;
+  border-radius: 8px;
+  color: black;
+  margin: 0 auto;
+  word-wrap: break-word;
+}
+
+/* Input field styling */
+.input {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #ffffffdd;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #999;
+}
+
+.edit-area {
+  width: 90%;
+  min-height: 60px;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  resize: none; /* Prevent resizing */
+  font-family: inherit;
+  background-color: #ffffffcc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  margin: 0 auto;
+}
+
+.edit-area:focus {
+  border-color: #00bcd4;
+  box-shadow: 0 0 8px rgba(0, 188, 212, 0.3);
+}
+
+.button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+.buttons,
+.check-button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px;
+  transition: color 0.2s;
+}
+
+.buttons:hover,
+.check-button:hover {
+  color: #000;
+}
+
+.check-button {
+  font-size: 25px;
+}
+
+.task-completed {
+  background-color: rgba(0, 255, 13, 0.69) !important;
+}
+
+.taskWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  max-width: 100%;
+  word-break: break-word;
+  background-color: rgba(255, 255, 255, 0.59);
+  border-radius: 20px;
+  padding: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.buttonWrapper {
+  display: flex;
+}
+
+.taskWrapper:hover {
+  background-color: rgba(255, 255, 255, 0.704);
+  transform: scale(1.01);
+}
